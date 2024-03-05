@@ -14,3 +14,4 @@ class Cachorro < Animal
 end
 
 cachorro = Cachorro.new
+cachorro.latir
