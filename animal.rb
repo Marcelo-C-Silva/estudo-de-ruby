@@ -1,17 +1,27 @@
 class Animal
-    def pular
-        puts 'PoimPoimPoim'
-    end
-    def dormir
-        puts 'ZZzzZZZ!!!'
-    end
-end
+    attr_accessor :nome
+    def initialize(nome)
+        @nome = nome
+        @raca
 
+    end
+    def caminha 
+        
+    end
+    
+end
 class Cachorro < Animal
-    def latir
-        puts 'auau'
+    def late
+        "au au"
+    end
+end
+class Gato < Animal
+    def mia
+        "miau"
     end
 end
 
-cachorro = Cachorro.new
-cachorro.latir
+cachorro = Cachorro.new("")
+puts cachorro.late
+gato = Gato.new("")
+puts gato.mia
